@@ -1,0 +1,61 @@
+@font-face {
+	font-family:'Beon';
+	src:url(fonts/beon-webfont.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Comfortaa';
+	src:url(fonts/Comfortaa-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Montserrat';
+	src:url(fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Calibri';
+	src:url(fonts/calibri.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Rockwell Nova';
+	src:url(fonts/RockwellNova.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Aldrich';
+	src:url(fonts/Aldrich-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Gill Sans Std';
+	src:url(fonts/GillSansStd.otf) format('opentype');
+}
+
+@font-face {
+	font-family:'Comic Sans';
+	src:url(fonts/comic.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Chinacat';
+	src:url(fonts/chinrg_.ttf) format('truetype');
+}
+@font-face {
+	font-family:'BioRhyme';
+	src:url(fonts/BioRhyme-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Bahnschrift';
+	src:url(fonts/bahnschrift.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Hibana';
+	src:url(fonts/Hibana-SubMedium.otf) format('opentype');
+}
+@font-face {
+	font-family:'Autour One';
+	src:url(fonts/AutourOne-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Courier';
+	src:url(fonts/cour.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Nunito';
+	src:url(fonts/Nunito-Regular.ttf);
+}
