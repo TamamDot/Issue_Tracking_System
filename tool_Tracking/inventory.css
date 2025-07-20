@@ -1,0 +1,209 @@
+.content .table1Cont{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:flex-start;
+	flex-direction:column;
+	background-color:#e6e6e6;		
+}
+.table1Cont .topSect{
+	width:100%;
+	height:10%;
+	display:flex;
+	justify-content:space-between;
+}
+.table1Cont .topSect .right i{
+	color: #595959;
+}
+.table1Cont .inventoryCont{
+	width:100%;
+	height:90%;
+	display:flex;
+	justify-content:flex-start;
+	flex-direction:column;
+}
+.inventoryCont .titleCont{
+	width:100%;
+	height:10%;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.titleCont p{
+	margin-left:20px;
+	font-size:30px;
+	font-family:'Montserrat',sans-serif;
+	font-weight:bolder;
+	color:rgba(0, 0, 0, .7);
+}
+.titleCont i{
+	font-size:40px;
+	margin-left:20px;
+}
+.inventoryCont .searchSect{
+	width:100%;
+	height:10%;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.searchSect .searchPoints{
+	width:60%;
+	height:100%;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.searchPoints .point{
+	width:10%;
+	height:60%;
+	border-radius:20px;
+	margin-left:10px;
+	border:1.5px solid #bfbfbf;
+	background-color:#cfcfcf;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	box-shadow:0px 0px 5px .5px rgba(0, 0, 0, .2);
+	cursor:pointer;
+	transition:all .5s ease;
+}
+.point.active{
+	border:1.5px solid #11a289;
+	background-color:rgba(18, 186, 122, .2);
+}
+.searchPoints .point p{
+	font-size:10px;
+	color:#737373;
+	font-family:'Comfortaa',sans-serif;
+}
+.searchPoints .point:nth-child(1){
+	width:7%;
+	margin-left:20px;	
+}
+.searchPoints .point:nth-child(2){
+	width:14%;
+}
+.searchPoints .point:nth-child(3), .point:nth-child(4), .point:nth-child(5), .point:nth-child(6){
+	width:24%;
+}
+.searchSect .searchBar{
+	width:40%;
+	height:100%;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.searchBar input{
+	width:70%;
+	height:70%;
+	border:none;
+	outline:none;
+	border-radius:20px;
+	padding-left:20px;
+	text-transform:capitalize;
+	font-family:'Montserrat',sans-serif;
+	color:#a6a6a6;
+	box-shadow:0px 0px 5px 3px rgba(0, 0, 0, .2);
+}
+.searchBar input::placeholder{
+	color:#cccccc;
+	font-weight:bolder;
+}	
+.searchBar i{
+	font-size:17px;
+	transform:translateX(-190%);
+}
+.inventoryCont .tableCont{
+	width:100%;
+	height:80%;
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	overflow-y:scroll;
+}
+.tableCont::-webkit-scrollbar{
+	width:10px;
+	background-color:#7c8e9c;
+	border-radius:5px;
+}
+.tableCont table{
+	width:97%;
+	margin-top:30px;
+	border-collapse:collapse;
+	border:0px solid black;	
+	box-shadow:0px 0px 4px 2px rgba(0, 0, 0, .2);
+	border-radius:4px;
+}
+.tableCont table tr{
+	border:none;
+	height:50px;
+	font-family:'Nunito',sans-serif;
+}
+.tableCont table th{
+	text-align:left;
+	background-color:#cfcfcf;
+	border:none;
+	width:10%;
+	font-size:13px;
+	font-weight:normal;
+}
+.tableCont table th:nth-child(1){
+	width:4%;
+}
+.tableCont table th:nth-child(2){
+	width:12%;
+}
+
+.tableCont table th:nth-child(4),th:nth-child(5),th:nth-child(6){
+	width:9%;
+}
+.tableCont table th:nth-child(7){
+	width:4%;
+}
+.tableCont table th i{
+	margin-left:10px;
+	color:#5e80a1;
+	font-size:18px;
+	margin-right:5px;
+}
+.tableCont table td{
+	background-color:#ededed;
+	border:none;
+	border-bottom:2px solid #e6e6e6;
+}
+.tableCont table td p{
+	margin-left:10px;
+	font-size:12px;
+	font-family:'Montserrat',sans-serif;
+}
+.tableCont table td:nth-child(7){
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.tableCont table td span{
+	width:60%;
+	height:60%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#bfbfbf;
+	border-radius:5px;
+	color:rgba(0, 0, 0, .3);
+}
+.tableCont table td:nth-child(2) span{
+	height:34px;
+	width:90%;
+	border-radius:20px;
+	font-weight:bolder;
+}
+.tableCont table td:nth-child(7) span{
+	cursor:pointer;
+	transition:all .4s ease;
+}
+.tableCont table td:nth-child(7) span:hover{
+	color:#599b8b;
+	box-shadow:1px 1px 5px rgba(0, 0, 0, .5);
+}

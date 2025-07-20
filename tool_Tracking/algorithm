@@ -1,0 +1,25 @@
+if frst arc is over 120 
+	minus 120 from the first arc value
+	then minus the second arc degree with the minues value
+	if third degree is also greater than 120 
+		then minus the third degree from 120 nd then add the reminant to the degree
+	if third dgree is less than or == 120
+		for the third arc just minus the radius from 120 nd then minus it in the degree
+
+else second arc is over 120
+	minus 120 from the second arc
+	then minus the third arc degree from the minus val
+	if first degree is also greater than 120 
+		then minus the first degree from 120 nd then add the reminant to the degree
+	if first dgree is less than 120
+		for the first arc just minus the radius from 120 nd then minus it in the degree
+
+else third arc is over 120
+	minus 120 from the third arc
+	then minus the first arc degree from the minus val
+	if second degree is also greater than 120 
+		then minus the second degree from 120 nd then add the reminant to the degree
+	if second dgree is less than 120
+		for the second arc just minus the radius from 120 nd then minus it in the degree
+
+
