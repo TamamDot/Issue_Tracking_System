@@ -1020,7 +1020,12 @@
 	<div class="content">
 		<p class="welcMSG">Welcome Esteem Staff, Here we can track different sector of our project. incase in need of training or guidiance, <br>Pleas contact any HI Staff. Thank You</p>
 	</div>
-
+	<audio id="rsMsgAudio" preload="auto">
+		<source src="audio/beep3.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="sdMsgAudio" preload="auto">
+		<source src="audio/beep2.mp3" type="audio/mpeg">
+	</audio>
 	<div class="footerCont">
 		<div class="footer">
 			<a href="https://www.gghnigeria.org/">Georgetown Global Health Nigeria Co.</a>	
@@ -1464,13 +1469,15 @@
 			}
 				
 
-
+			var audioSource1 = document.getElementById("rsMsgAudio");
+			var audioSource2 = document.getElementById("sdMsgAudio");
 			//loading the chats functions
 			function liveChat(){
 				var xhttp6 = new XMLHttpRequest();
 				xhttp6.onload = function () {
 					// alert(this.responseText)
 					loadMsgs(this.responseText);
+					audioSource1.play();
 				}
 				xhttp6.open("POST","tracking-inc.php");
 				xhttp6.setRequestHeader("Content-type","application/x-www-form-urlencoded");
@@ -1649,6 +1656,7 @@
 				var xhttp5 = new XMLHttpRequest();
 				xhttp5.onload = function () {
 					// alert(this.responseText);
+					audioSource2.play();
 				}
 				xhttp5.open("POST","tracking-inc.php");
 				xhttp5.setRequestHeader("Content-type","application/x-www-form-urlencoded");

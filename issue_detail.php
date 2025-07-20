@@ -860,6 +860,13 @@
 						<p style="display:none;" id="chatmsg">no staff have been assigned yet, please wait until your issue has been assigned before you can contact your assigned staff</p>	
 						<button id="startChat" type="button">Start Chatting with Mr Asor</button>
 					</div>
+					<audio id="rsMsgAudio" preload="auto">
+						<source src="audio/beep3.mp3" type="audio/mpeg">
+					</audio>
+					<audio id="sdMsgAudio" preload="auto">
+						<source src="audio/beep2.mp3" type="audio/mpeg">
+					</audio>
+					<button onclick="playAudio()" type="button">Test</button>
 				</div>
 			</div>
 
@@ -1102,7 +1109,8 @@
 			},700)
 		})
 
-		
+		var audioSource1 = document.getElementById("rsMsgAudio");
+		var audioSource2 = document.getElementById("sdMsgAudio");
 
 		//loading the chats functions
 		function liveChat(){
@@ -1112,6 +1120,7 @@
 				if (this.responseText != "no new message") {
 					var messages = this.responseText+"}";
 					loadMsgs(messages);
+					audioSource1.play();
 				}
 			}
 			xhttp5.open("POST","tracking-inc.php");
@@ -1196,6 +1205,7 @@
 			var xhttp4 = new XMLHttpRequest();
 			xhttp4.onload = function() {
 				// alert(this.responseText);
+				audioSource2.play();
 			}
 			xhttp4.open("POST","tracking-inc.php");
 			xhttp4.setRequestHeader("Content-type","application/x-www-form-urlencoded");
